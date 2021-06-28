@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" action="/checkdata">
+  <div class="field">
+      <div class="control">
+          <input class="input is-large" type="text" name="name" placeholder="Your name" autofocus="">
+      </div>
+  </div>
+  <div class="field">
+      <div class="control">
+        <input class="input is-large" type="text" name="lastname" placeholder="Your lastname" autofocus="">
+      </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <input class="input is-large" type="text" name="mother_lastname" placeholder="Your mother's lastname" autofocus="">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <input class="input is-large" type="date" name="birthday" placeholder="Your date of birth" autofocus="">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <select id="gender" name="gender" class="input is-large">
+        <option>Sexo</option>
+          <option value="M">Mujer</option>
+          <option value="H">Hombre</option>
+      </select>
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <select id="entity" name="entity" class="input is-large">
+        <option>State</option>
+        <option value="AS">Aguascalientes</option>
+        <option value="BC">Baja california</option>
+        <option value="BS">Baja california sur</option>
+        <option value="CC">Campeche</option>
+        <option value="CL">Coahuila de zaragoza</option>
+        <option value="CM">Colima</option>
+        <option value="CS">Chiapas</option>
+        <option value="CH">Chihuahua</option>
+        <option value="CX">Ciudad de México</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="DG">Durango</option>
+        <option value="GT">Guanajuato</option>
+        <option value="GR">Guerrero</option>
+        <option value="HG">Hidalgo</option>
+        <option value="JC">Jalisco</option>
+        <option value="MC">Estado de México</option>
+        <option value="MN">Michoacan de ocampo</option>
+        <option value="MS">Morelos</option>
+        <option value="NT">Nayarit</option>
+        <option value="NL">Nuevo leon</option>
+        <option value="OC">Oaxaca</option>
+        <option value="PL">Puebla</option>
+        <option value="QT">Queretaro de arteaga</option>
+        <option value="QR">Quintana roo</option>
+        <option value="SP">San luis potosi</option>
+        <option value="SL">Sinaloa</option>
+        <option value="SR">Sonora</option>
+        <option value="TC">Tabasco</option>
+        <option value="TS">Tamaulipas</option>
+        <option value="TL">Tlaxcala</option>
+        <option value="VZ">Veracruz</option>
+        <option value="YN">Yucatan</option>
+        <option value="ZS">Zacatecas</option>
+        <option value="NE">Nacido en el extranjero</option>
+      </select>
+    </div>
+  </div>
+  <button class="button is-block is-info is-large is-fullwidth">Submit</button>
+</form>
+{% endblock %}
